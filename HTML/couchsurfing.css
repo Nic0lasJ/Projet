@@ -1,0 +1,85 @@
+body{
+  margin: 0;
+
+}
+header{
+  border-bottom: 3px solid silver;
+  position: fixed;
+  background-color: white;
+  width: 100%; /*prend toute la largeur de la page*/
+
+}
+nav{
+  float: right;
+}
+li{
+  display: inline-block;
+  margin-right: 25px;
+  color: gray;
+}
+#sinscrir{
+  border-radius: 4px;
+  border: 0px;
+  background-color: #3498db;
+  color: white;
+}
+#login{
+  border-radius: 4px;
+  border-color: #3498DB;
+  background-color: white;
+}
+#logo{
+  margin-left: 55px;
+  margin-top: 15px;
+}
+#ligne{
+  border: 3px;
+  border-color: black;
+}
+/*#family{
+  width: 100%;
+}*/
+#centre{
+  background-image: url(family.jpg);
+  height: 650px;
+
+}
+#blocnews{
+  text-align: center;
+  padding-top: 250px;/*pousse le texte au niveau de la hauteur*/
+line-height: 5px;/*interligne*/
+
+}
+h1{
+  color: #ecf0f1;
+  font-size: 48px;
+  font-family: sans-serif;
+}
+h2{
+  font-family: comic;
+  font-size: 22px;
+  color: #ecf0f1;
+font-weight:300;
+}
+footer {
+ height: 300px;
+ background-color: silver;
+}
+#facebookL{
+border: 0px;
+padding-left: 30px;
+color: white;
+font-size: 16px;
+background-color: #3b5998;
+background-image: url(logoF.jpg);
+background-repeat: no-repeat;
+background-position: 6% 40%;
+background-size: 20px 20px;
+}
+#email{
+  border: 0px;
+  /*padding-left: 30px;*/
+  color: white;
+  font-size: 16px;
+  background-color: orange;
+}
