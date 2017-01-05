@@ -1,0 +1,44 @@
+
+body {
+background-image:url(White-Background-Iphone-Pics-1.jpg);
+background-size: cover;
+}
+
+#typefeuille{
+  border: 3px solid black;
+  border-radius: 46px;
+  width: 400px;
+  height: 200px;
+  background-color: #E66D55;
+  margin: auto;
+  margin-top: 200px;
+}
+
+li{
+display: inline-block;
+cursor: pointer;
+line-height: 60px;
+}
+
+li #nom, #mdp {
+    border-radius: 15px;
+    background-color:none;
+    box-shadow: 0 2px #999;
+    text-align: center;
+    cursor:auto;
+}
+
+#submit{
+display: inline-block;
+ padding: 15px 25px;
+ font-size: 24px;
+ cursor: pointer;
+ text-align: center;
+ text-decoration: none;
+ outline: none;
+ color: #fff;
+ background-color: #4CAF50;
+ border: none;
+ border-radius: 15px;
+ box-shadow: 0 9px #999;
+}
