@@ -1,0 +1,60 @@
+div#typefeuille{
+  border: 1px solid black;
+  width: 400px;
+  height: 600px;
+  background:hsl(0, 0%, 80%); grey;
+  /* Marge auto pour centre*/
+  margin: auto;
+  margin-top: 26px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  }
+div#titre{
+  text-align: center;
+}
+header{
+  margin-left: 50px;
+  white-space: pre-line;
+
+}
+input{
+  border-radius: 10px;
+}
+input#mail{
+
+}
+input#Nom{
+
+}
+input#Prenom{
+
+}
+input#telephone{
+  background-color: gray;
+}
+input#box{
+position: absolute;
+top: 260px;
+left: 320px;
+}
+footer{
+  margin-left: 55px;
+  white-space: pre-line;
+  font-size: 10px;
+}
+div#texte3{
+  margin-right: 55px;
+  text-align: right;
+  color: blue;
+}
+u{
+  color: blue;
+}
+input#sinscrir{
+  background-color: blue;
+  color: white;
+  font-size: 20px;
+}

@@ -1,0 +1,25 @@
+
+body{
+background-image: url(https://images4.alphacoders.com/893/89384.jpg);
+background-repeat: no-repeat;
+background-position: center;
+}
+div#page{
+
+  width: 400px;
+  height: 600px;
+  background-color: transparent;
+  /* Marge auto pour centre*/
+  margin: auto;
+  margin-top: 2%;
+  padding-top: 5%;
+
+  }
+input{
+
+  margin-top: 15%;
+  margin-left: 40px;
+}
+header{
+text-align: center;
+}
