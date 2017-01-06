@@ -26,7 +26,7 @@
           // On affiche le numéro du combat
           echo("<strong>Combat numéro " . $nb . "</strong><br /><br />");
           // On initialise un nouveau monstre facile
-          $monstre = new MonstreFacile("Ivan le Terrible");
+          $monstre = new MonstreFacile("Ivan le Gland");
           echo($joueur->getPseudo() . " est prêt à affronter " . $monstre->getNom() . "<br /><br />");
           // Tant que le monstre est vivant (et le joueur aussi), le combat se déroule
           while($monstre->estVivant() && $joueur->estVivant()){

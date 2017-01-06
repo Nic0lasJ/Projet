@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>A Simple Page with CKEditor</title>
+        <!-- Make sure the path to CKEditor is correct. -->
+        <script src="ckeditor/ckeditor.js"></script>
+    </head>
+    <body>
+
+
+          <form method="post" action="skeditor.php" name="php" enctype="multipart/form-date">
+            <!-- enctype enregistre le fichier  -->
+
+            <input type="text" id="nom" name="nom" placeholder="Nom fichier">
+</br>
+            <textarea name="editor" id="editor1" rows="10" cols="80" config.extraPlugins = 'autogrow',>
+                This is my textarea to be replaced with CKEditor.
+            </textarea>
+            </br>
+            <script>
+                      CKEDITOR.replace( 'editor1', {
+                      	extraPlugins: 'autogrow',
+                      	autoGrow_maxHeight: 800,
+
+                      	// Remove the Resize plugin as it does not make sense to use it in conjunction with the AutoGrow plugin.
+                      	removePlugins: 'resize'
+                      });
+                          CKEDITOR.replace( 'editor1' );
+
+            </script>
+
+            <input type="submit" value="Validez">
+          </form>
+  </body>
+</html>
