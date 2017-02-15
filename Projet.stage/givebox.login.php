@@ -42,7 +42,7 @@
          </div>
          <div class="form-group">
            <div class="col-sm-offset-2 col-sm-10">
-             <button type="submit" name="submit" value="Submit" class="btn btn-default">Valider </button>
+             <button type="submit" name="submit" value="submit" class="btn btn-default">Valider </button>
             </form>
 
          </div>

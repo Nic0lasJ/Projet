@@ -45,7 +45,7 @@ function test_input($data) {
           <!--input avec : Largeur 4 col longeur 2-->
           <label class="control-label col-sm-2" for="name">Prénom:</label>
           <div class="col-sm-4">
-            <input type="text" class="form-control" name="name" id="name" placeholder="Votre prénom">
+            <input type="text" class="form-control" name="prenom" id="name" placeholder="Votre prénom">
           </div>
         </div>
   <br><br><br>
@@ -72,16 +72,16 @@ function test_input($data) {
               <textarea class="form-control" name="comment" rows="1" cols="40" id="comment"></textarea>
             </div>
           </div>
-  <br><br>
+  <br><br><br>
 <label class="control-label col-sm-2" for="website">Genre:</label>
 
-  <input type="radio" name="gender" value="female">Femme
-  <input type="radio" name="gender" value="male">Homme
+  <input type="radio" name="gender" value="Femme">Femme
+  <input type="radio" name="gender" value="Homme">Homme
 
-  <br><br>
 
+<br><br>
   <!--Les cheks box qui ont le même name s'annule !-->
-  <label class="control-label col-sm-2" for="website">  Vous chercher :</label>
+  <!-- <label class="control-label col-sm-2" for="website">  Vous chercher :</label>
   <input type="checkbox" name="covoiturage" value="Co-voiturage">Co-voiturage
   <input type="checkbox" name="jardinpartager" value="Jardin-partager">Jardin partager
   <br><br>
@@ -89,6 +89,7 @@ function test_input($data) {
 
   <input type="checkbox" name="voiturage" value="Co-voiturage">Co-voiturage
   <input type="checkbox" name="Jardin" value="Jardin-partager">Jardin partager
+  <br><br> -->
   <br><br>
   <div class="form-group">
     <div class="col-sm-offset-2 col-sm-10">
@@ -97,7 +98,7 @@ function test_input($data) {
     </div>
   </div>
 </form>
-
+<br><br>
 <h2>Charte d'utilisateur !</h2>
 <a href="#demo" class="btn btn-info" data-toggle="collapse">Clic ici  </a>
 <div id="demo" class="collapse">
@@ -175,36 +176,33 @@ function test_input($data) {
 
   </div>
 </div>
+</div>
 <?php
-// echo "<h2>Vous avez déclarez :</h2>";
-// echo "Votre nom : ";
-// echo $name;
-// echo "<br><br>";
-// echo "Votre e-mail : ";
-// echo $email;
-// echo "<br><br>";
-// echo "Votre site : ";
-// echo $website;
-// echo "<br><br>";
-// echo "Vos informations annexe : ";
-// echo $comment;
-// echo "<br><br>";
-// echo "Vous êtes : ";
-// echo $gender;
-// echo "<br><br>";
-// echo "Vous chercher : ";
-// echo $covoiturage;
-// echo " ";
-// echo $jardinpartager;
-// echo "<br><br>";
-// echo "Vous proposez : ";
-// echo $voiturage;
-// echo " ";
-// echo $Jardin;
+
+//variable des champs input
+$prenom=$_POST['prenom'];
+$email=$_POST['email'];
+$gender=$_POST['gender'];
+//connection a mysql
+
+$connect = mysql_connect("localhost", "nicolas", "nicolas");
+if (!$connect)
+{
+  die('Erreure de connection'.mysql_error());
+}
+
+//sélection de la database
+mysql_select_db("givebox", $connect);
+
+
+//insertion de donnée d'enregistrement sur la database users
+
+mysql_query ("INSERT INTO users VALUES ('id', '$prenom', '$email', '$gender') ") ;
+
+
 ?>
 
 
 
-</div>
 </body>
 </html>

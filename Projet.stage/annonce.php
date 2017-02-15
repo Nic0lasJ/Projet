@@ -16,14 +16,14 @@
   <nav class="navbar navbar-inverse">
     <div class="container-fluid">
       <div class="navbar-header">
-        <a class="navbar-brand" href="Interface.givebox.php">Accueil</a>
+        <a class="navbar-brand" href="aide.givebox.php">Besoin d'aide</a>
       </div>
 
   <!-- Créations d'une bare de navigation  -->
 
 
       <ul class="nav navbar-nav">
-        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Besoin d'aide <span class="caret"></span></a>
+        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Accueil <span class="caret"></span></a>
           <ul class="dropdown-menu">
             <li><a href=""><span class="glyphicon glyphicon-question-mark"></span> Des questions</a></li>
             <li><a href=""><span class="glyphicon glyphicon-map-marker"></span>  Emplacement/Coordonnées</a></li>
@@ -36,8 +36,8 @@
             <li><a href="location.givebox.php"><span class="glyphicon glyphicon-list-alt"></span> Location</a></li>
             <li><a href="voiturage.givebox.php"><span class="glyphicon glyphicon-road"></span>  Co-voiturage</a></li>
             <li><a href="jardin.givebox.php"><span class="glyphicon glyphicon-tree-deciduous"></span>  Jardin partagé</a></li>
-            <li><a href="give.givebox.php"><span class="glyphicon glyphicon-gift"></span>  Givebox </a></li>
-            <li><a href="achat.vente.givebox.php">Vendre / Acheter</a></li>
+            <li><a href=""><span class="glyphicon glyphicon-gift"></span>  Givebox </a></li>
+            <li><a href="annonce.php">Vendre</a></li>
           </ul>
         </li>
   	  <li><a href="#">Evenements</a></li>
